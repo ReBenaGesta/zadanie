@@ -4,7 +4,74 @@
 
 @tailwind utilities;
 
+@import url("global.css");
 
 body {
+}
 
+.sub-heading {
+  position: relative;
+  right: 190px;
+}
+
+.rect-1 {
+  background: linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -moz-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -webkit-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -ms-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  left: 0px;
+  position: absolute;
+  top: 40%;
+  width: 35%;
+  height: 236px;
+}
+
+.rect-2 {
+  background: linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -moz-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -webkit-linear-gradient(
+    28deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -ms-linear-gradient(
+    28deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  position: relative;
+  height: 50vh;
+  width: 400px;
+  left: 55%;
+  margin-bottom: 50px;
+}
+
+.temp {
+ width: 100px;
+ height: 100px;
+ background-color: #000;
 }

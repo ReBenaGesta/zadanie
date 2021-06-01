@@ -1,0 +1,1 @@
+export const API_CONTACT = "/api/contact";

@@ -4,7 +4,254 @@
 
 @tailwind utilities;
 
+@import url("global.css");
 
-body {
+.sub-heading {
+  /* 10px + 2.32rem("K") + 10px = 3.57rem */
+  margin-left: 3.57rem;
+}
 
+.rect-1 {
+  background: linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -moz-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -webkit-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -ms-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  left: 0;
+  position: absolute;
+  top: 40%;
+  width: 50vw;
+  transform: translateX(-100%);
+  height: 236px;
+}
+
+.rect-2 {
+  background: linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -moz-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -webkit-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -ms-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  right: 0;
+  position: absolute;
+  top: 40%;
+  width: 50vw;
+  transform: translateX(100%);
+  height: 236px;
+}
+
+.rect-3 {
+  background-color: #a6a6a6;
+  width: 132px;
+  height: 100vh;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 50%;
+}
+
+.rect-4 {
+  background-color: #a6a6a6;
+  width: 50%;
+  height: 132px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-10%);
+}
+
+.rect-5 {
+  background: linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -moz-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -webkit-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  background: -ms-linear-gradient(
+    152deg,
+    rgb(36, 55, 101) 28%,
+    rgb(65, 89, 145) 100%
+  );
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(-50%);
+  height: 50vw;
+  width: 236px;
+}
+
+.kolorystka-2 {
+  height: 90%;
+  align-self: center;
+}
+
+.kolorystka-4 {
+  max-height: 443px;
+}
+
+.middle-pictures-offset {
+  transform: translateY(-20%);
+}
+
+.xl-offest-kolorystka-1 {
+  transform: translateY(-35%);
+}
+
+.xl-offest-kolorystka-2-3-4 {
+  transform: translateY(-70%);
+}
+
+.xl-video-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 268px;
+  transform: translateX(-16px);
+}
+
+@media (min-width: 640px) {
+  .sub-heading {
+    /* 16px + 4.64rem("K") + 16px = 6.0625rem */
+    margin-left: 6.0625rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sub-heading {
+    /* 36px + 8.125("K") + 36px = 12.625rem */
+    margin-left: 12.625rem;
+    transform: translateY(-1rem);
+  }
+
+  .last-text-offset {
+    margin-left: 250px;
+  }
+
+  .rect-1 {
+    transform: translateX(0);
+    top: auto;
+    bottom: -5%;
+  }
+
+  .kolorystka-2 {
+    height: 270px;
+  }
+
+  .kolorystka-3,
+  .kolorystka-4 {
+    height: 320px;
+  }
+
+  .kolorystka-4 {
+    transform: translateY(-20%);
+  }
+}
+
+@media (max-width: 1280px)  {
+  .sm-h-500 {
+    max-height: 500px;
+  }
+
+  .x-minus-50 {
+    transform: translateX(-24rem);
+  }
+}
+
+@media (min-width: 1920px) {
+  .rect-1 {
+    max-width: 830px; 
+  }
+
+  .kolorystka-1 {
+    height: 748px;
+    width: 561px;
+    max-width: none;
+  }
+
+  .x-minus-50 {
+    transform: translateX(150px);
+  }
+
+  .xl-offest-kolorystka-1 {
+    top: 180px;
+  }
+
+  .fhd-offset {
+    margin-left: 612px;
+  }
+  
+  .kolorystka-2 {
+    height: 348px;
+  }
+
+  .kolorystka-3 {
+    height: 496px;
+  }
+
+  .kolorystka-4 {
+    height: 443px;
+  }
+
+  .xl-offest-kolorystka-2-3-4, 
+  .middle-pictures-offset {
+    transform: none;
+  }
+
+  .last-text-offset {
+    margin-left: 950px;
+  }
+
+  .rect-4 {
+    height: 235px;
+    transform: translateY(-40%);
+  }
+
+  .rect-5 {
+    top: 248px;
+    width: 478px;
+    height: 1000px;
+    border-bottom: solid white 120px;
+  }
+  
+  .xl-video-wrapper {
+    width: 647px;
+    transform: translateX(-85px);
+    bottom: 120px;
+  }
 }

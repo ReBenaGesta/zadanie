@@ -1,75 +1,108 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <div className="flex sm:justify-center fhd:justify-start">
+        <section className="mt-sm xl:mt-lg z-30 fhd:mt-fhdxl fhd-offset">
+          <h1 className="font-thin text-darkBlue max-w-full break-all text-mobile-xl sm:text-tablet-xl xl:text-desktop-xl leading-mobile-xl sm:leading-tablet-xl xl:leading-desktop-xl">
+            Kolorystka
+          </h1>
+          <h3 className="font-thin text-gray relative sub-heading text-mobile-md sm:text-tablet-md xl:text-desktop-md leading-mobile-md sm:leading-tablet-md xl:leading-desktop-md">
+            Ilona Brzozowska
+          </h3>
+        </section>
+      </div>
+      <section className="mt-sm xl:mt-md relative z-30 ">
+        <h2 className="font-light text-center text-darkBlue last-text-offset text-mobile-lg sm:text-tablet-lg xl:text-desktop-lg leading-mobile-lg sm:leading-tablet-lg xl:leading-desktop-lg fhd:text-left">
+          Styl, kolor, biznes
+        </h2>
+      </section>
+      <section className="hidden xl:block xl-offest-kolorystka-1 fhd:absolute">
+        <div className="h-full relative flex justify-center w-full fhd:justify-start fhd:absolute fhd:h-auto">
+          <img
+            src="/assets/kolorystka1.png"
+            alt="Kolorystka1"
+            className="sm-h-500 x-minus-50 kolorystka-1"
+          />
+          <div className="rect-1 z-minus-10" />
         </div>
-      </main>
+      </section>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+      <section className="hidden xl:flex xl-offest-kolorystka-2-3-4 gap-8 middle-pictures-offset fhd:justify-start fhd:ml-sm z-30 fhd:relative fhd:mt-md">
+        <div className="flex justify-center gap-8">
+          <img
+            src="/assets/kolorystka2.png"
+            alt="Kolorystka2"
+            className="kolorystka-2"
+          ></img>
+          <img
+            src="/assets/kolorystka3.png"
+            alt="Kolorystka3"
+            className="kolorystka-3"
+          ></img>
+          <img
+            src="/assets/kolorystka4.png"
+            alt="Kolorystka4"
+            className="kolorystka-4"
+          ></img>
+          <div className="rect-5 block z-minus-30">
+            <div>
+              <div className="relative xl-video-wrapper">
+                <img src="/assets/video_thumbnail.png" alt="play" />
+                <div className="absolute left-0 top-0 flex w-full h-full items-center justify-center">
+                  <span>
+                    <img
+                      src="/assets/play-button.png"
+                      className="inline"
+                      alt="play"
+                    />
+                    <span className="inline text-white">zobacz film</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rect-4 block z-minus-20" />
+        </div>
+      </section>
+
+      <section className="flex flex-col items-center gap-4 mt-sm overflow-hidden xl:hidden">
+        <div className="h-full relative">
+          <img
+            src="/assets/kolorystka1.png"
+            alt="Kolorystka1"
+            className="sm-h-500"
+          />
+          <div className="rect-1 z-minus-10" />
+          <div className="rect-3 z-minus-20 hidden sm:block" />
+        </div>
+
+        <img src="/assets/kolorystka2.png" alt="Kolorystka2" />
+
+        <img src="/assets/kolorystka3.png" alt="Kolorystka3" />
+
+        <div className="h-full relative">
+          <img
+            src="/assets/kolorystka4.png"
+            alt="Kolorystka4"
+            className="sm-h-500"
+          />
+          <div className="rect-2 z-10" />
+        </div>
+
+        <div className="relative">
+          <img src="/assets/video_thumbnail.png" alt="play" />
+          <div className="absolute left-0 top-0 flex w-full h-full items-center justify-center">
+            <span>
+              <img
+                src="/assets/play-button.png"
+                className="inline"
+                alt="play"
+              />
+              <span className="inline text-white">zobacz film</span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
